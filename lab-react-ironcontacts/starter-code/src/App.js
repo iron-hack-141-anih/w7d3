@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ContactsList from "./components/ContactsList";
 import ContactForm from "./components/ContactForm";
 import JSONContacts from "./contacts.json";
+import SearchBar from "./components/SearchBar";
 
 import "./App.css";
 
@@ -64,6 +65,7 @@ class App extends Component {
         </button>
 
         <ContactForm pushContact={this.pushContact} />
+        <SearchBar className="search-bar" />
 
         <ContactsList
           handleDelete={this.handleDelete}
